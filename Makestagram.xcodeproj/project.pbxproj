@@ -15,8 +15,8 @@
 		FB6FEC031F01667900DA359C /* CreateUsernameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB6FEC021F01667900DA359C /* CreateUsernameViewController.swift */; };
 		FB6FEC051F01837500DA359C /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB6FEC041F01837500DA359C /* UserService.swift */; };
 		FB6FEC081F01AB2000DA359C /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB6FEC071F01AB2000DA359C /* Constants.swift */; };
+		FB6FEC0A1F01B59300DA359C /* Storyboard+Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB6FEC091F01B59300DA359C /* Storyboard+Utility.swift */; };
 		FBF628621EFD98040010DCBC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBF628611EFD98040010DCBC /* AppDelegate.swift */; };
-		FBF628641EFD98040010DCBC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBF628631EFD98040010DCBC /* ViewController.swift */; };
 		FBF628671EFD98040010DCBC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBF628651EFD98040010DCBC /* Main.storyboard */; };
 		FBF628691EFD98040010DCBC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FBF628681EFD98040010DCBC /* Assets.xcassets */; };
 		FBF6286C1EFD98040010DCBC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBF6286A1EFD98040010DCBC /* LaunchScreen.storyboard */; };
@@ -33,9 +33,9 @@
 		FB6FEC021F01667900DA359C /* CreateUsernameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateUsernameViewController.swift; sourceTree = "<group>"; };
 		FB6FEC041F01837500DA359C /* UserService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
 		FB6FEC071F01AB2000DA359C /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		FB6FEC091F01B59300DA359C /* Storyboard+Utility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Storyboard+Utility.swift"; sourceTree = "<group>"; };
 		FBF6285E1EFD98040010DCBC /* Makestagram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Makestagram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBF628611EFD98040010DCBC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		FBF628631EFD98040010DCBC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		FBF628661EFD98040010DCBC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FBF628681EFD98040010DCBC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FBF6286B1EFD98040010DCBC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -74,7 +74,6 @@
 		FB6FEBF01EFD9FDB00DA359C /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				FBF628631EFD98040010DCBC /* ViewController.swift */,
 				FB6FEBFD1F00450B00DA359C /* LoginViewController.swift */,
 				FB6FEC021F01667900DA359C /* CreateUsernameViewController.swift */,
 			);
@@ -117,6 +116,14 @@
 			name = Services;
 			sourceTree = "<group>";
 		};
+		FB6FEC0B1F01B59D00DA359C /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				FB6FEC091F01B59300DA359C /* Storyboard+Utility.swift */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
 		FBF628551EFD98040010DCBC = {
 			isa = PBXGroup;
 			children = (
@@ -145,6 +152,7 @@
 				FB6FEBF11EFD9FE800DA359C /* Storyboards */,
 				FBF628681EFD98040010DCBC /* Assets.xcassets */,
 				FB6FEBF41EFDA1C100DA359C /* Supporting Files */,
+				FB6FEC0B1F01B59D00DA359C /* Extensions */,
 			);
 			path = Makestagram;
 			sourceTree = "<group>";
@@ -277,7 +285,7 @@
 				FB6FEC001F00BD3800DA359C /* User.swift in Sources */,
 				FB6FEBFE1F00450B00DA359C /* LoginViewController.swift in Sources */,
 				FB6FEC051F01837500DA359C /* UserService.swift in Sources */,
-				FBF628641EFD98040010DCBC /* ViewController.swift in Sources */,
+				FB6FEC0A1F01B59300DA359C /* Storyboard+Utility.swift in Sources */,
 				FB6FEC081F01AB2000DA359C /* Constants.swift in Sources */,
 				FB6FEC031F01667900DA359C /* CreateUsernameViewController.swift in Sources */,
 				FBF628621EFD98040010DCBC /* AppDelegate.swift in Sources */,
