@@ -79,6 +79,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="2tX-ym-bWo"/>
                     <connections>
+                        <outlet property="loginButton" destination="iS2-S5-can" id="BUT-Et-0YI"/>
                         <segue destination="eh0-T9-BIe" kind="show" identifier="toCreateUsername" id="LuQ-0b-Qkb"/>
                     </connections>
                 </viewController>

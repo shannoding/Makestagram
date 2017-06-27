@@ -25,8 +25,8 @@ class LoginViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    @IBOutlet weak var loginButton: UIButton!
     
+    @IBOutlet weak var loginButton: UIButton!
    
     @IBAction func loginButtonTapped(_ sender: UIButton) {
 
@@ -58,13 +58,12 @@ extension LoginViewController: FUIAuthDelegate {
         UserService.show(forUID: user.uid) { (user) in
             if let user = user {
                 // handle existing user
-                User.setCurrent(user)
+                User.setCurrent(user, writeToUserDefaults: true)
                 
                 let initialViewController = UIStoryboard.initialViewController(for: .main)
                 self.view.window?.rootViewController = initialViewController
                 self.view.window?.makeKeyAndVisible()
-            }
-             else {
+            } else {
                 // handle new user
                 self.performSegue(withIdentifier: Constants.Segue.toCreateUsername, sender: self)
             }
