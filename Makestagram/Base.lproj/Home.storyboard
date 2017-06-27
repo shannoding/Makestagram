@@ -25,8 +25,19 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="JoL-Jk-dJO">
                                 <rect key="frame" x="16" y="0.0" width="343" height="618"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="PostImageCell" id="g0O-s8-D48">
+                                        <rect key="frame" x="0.0" y="28" width="343" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="g0O-s8-D48" id="dQw-EU-dWI">
+                                            <rect key="frame" x="0.0" y="0.0" width="343" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
                                 <connections>
                                     <outlet property="dataSource" destination="KsX-Fi-SS2" id="gWw-Vf-XOq"/>
+                                    <outlet property="delegate" destination="KsX-Fi-SS2" id="Vs8-y8-yKn"/>
                                 </connections>
                             </tableView>
                         </subviews>
@@ -41,6 +52,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="FJA-SJ-QpZ"/>
+                    <connections>
+                        <outlet property="tableView" destination="JoL-Jk-dJO" id="9qU-D6-QC6"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jI7-JH-Cgo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
