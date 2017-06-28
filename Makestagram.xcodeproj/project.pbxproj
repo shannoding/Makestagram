@@ -26,6 +26,7 @@
 		FB6FEC3C1F02E08400DA359C /* UIImage+Size.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB6FEC3B1F02E08400DA359C /* UIImage+Size.swift */; };
 		FB6FEC3E1F02E34400DA359C /* StorageReference+Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB6FEC3D1F02E34400DA359C /* StorageReference+Post.swift */; };
 		FB6FEC411F02F69400DA359C /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB6FEC3F1F02F69400DA359C /* Home.storyboard */; };
+		FB6FEC431F0321CD00DA359C /* PostImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB6FEC421F0321CD00DA359C /* PostImageCell.swift */; };
 		FBF628621EFD98040010DCBC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBF628611EFD98040010DCBC /* AppDelegate.swift */; };
 		FBF628671EFD98040010DCBC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBF628651EFD98040010DCBC /* Main.storyboard */; };
 		FBF628691EFD98040010DCBC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FBF628681EFD98040010DCBC /* Assets.xcassets */; };
@@ -54,6 +55,7 @@
 		FB6FEC3B1F02E08400DA359C /* UIImage+Size.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Size.swift"; sourceTree = "<group>"; };
 		FB6FEC3D1F02E34400DA359C /* StorageReference+Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "StorageReference+Post.swift"; sourceTree = "<group>"; };
 		FB6FEC401F02F69400DA359C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Home.storyboard; sourceTree = "<group>"; };
+		FB6FEC421F0321CD00DA359C /* PostImageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostImageCell.swift; sourceTree = "<group>"; };
 		FBF6285E1EFD98040010DCBC /* Makestagram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Makestagram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBF628611EFD98040010DCBC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FBF628661EFD98040010DCBC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -161,6 +163,14 @@
 			name = Helpers;
 			sourceTree = "<group>";
 		};
+		FB6FEC441F0321D500DA359C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FB6FEC421F0321CD00DA359C /* PostImageCell.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
 		FBF628551EFD98040010DCBC = {
 			isa = PBXGroup;
 			children = (
@@ -183,6 +193,7 @@
 			isa = PBXGroup;
 			children = (
 				FBF628611EFD98040010DCBC /* AppDelegate.swift */,
+				FB6FEC441F0321D500DA359C /* Views */,
 				FB6FEBF01EFD9FDB00DA359C /* View Controllers */,
 				FB6FEC061F01846500DA359C /* Services */,
 				FB6FEC011F00BD3E00DA359C /* Models */,
@@ -327,6 +338,7 @@
 				FB6FEC111F01D34F00DA359C /* MainTabBarController.swift in Sources */,
 				FB6FEC051F01837500DA359C /* UserService.swift in Sources */,
 				FB6FEC3A1F02DA2100DA359C /* Post.swift in Sources */,
+				FB6FEC431F0321CD00DA359C /* PostImageCell.swift in Sources */,
 				FB6FEC3C1F02E08400DA359C /* UIImage+Size.swift in Sources */,
 				FB6FEC0D1F01C49D00DA359C /* HomeViewController.swift in Sources */,
 				FB6FEC161F02410200DA359C /* MGPhotoHelper.swift in Sources */,
