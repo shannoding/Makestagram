@@ -11,7 +11,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Home View Controller-->
+        <!--Makestagram-->
         <scene sceneID="M5c-th-hwa">
             <objects>
                 <viewController automaticallyAdjustsScrollViewInsets="NO" id="KsX-Fi-SS2" customClass="HomeViewController" customModule="Makestagram" customModuleProvider="target" sceneMemberID="viewController">
@@ -104,6 +104,7 @@
                                                         <constraint firstAttribute="width" secondItem="nIy-vP-8vL" secondAttribute="height" multiplier="24:29" id="nZu-Xn-sZN"/>
                                                     </constraints>
                                                     <state key="normal" image="btn_heart_black_outline"/>
+                                                    <state key="selected" image="btn_heart_red_solid"/>
                                                     <connections>
                                                         <action selector="likeButtonTapped:" destination="onb-av-Lob" eventType="touchUpInside" id="vZe-jv-igu"/>
                                                     </connections>
@@ -115,7 +116,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="31 MINUTES AGO" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yVy-K3-Xm9">
-                                                    <rect key="frame" x="274.5" y="8" width="92.5" height="29.5"/>
+                                                    <rect key="frame" x="289.5" y="8" width="92.5" height="29.5"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="11"/>
                                                     <color key="textColor" red="0.60392156862745094" green="0.60392156862745094" blue="0.60392156862745094" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
@@ -170,7 +171,7 @@
                             <constraint firstAttribute="trailing" secondItem="JoL-Jk-dJO" secondAttribute="trailing" id="oLi-u1-bcx"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="FJA-SJ-QpZ"/>
+                    <navigationItem key="navigationItem" title="Makestagram" id="FJA-SJ-QpZ"/>
                     <connections>
                         <outlet property="tableView" destination="JoL-Jk-dJO" id="9qU-D6-QC6"/>
                     </connections>
@@ -204,6 +205,7 @@
     </scenes>
     <resources>
         <image name="btn_heart_black_outline" width="24" height="24"/>
+        <image name="btn_heart_red_solid" width="24" height="24"/>
         <image name="btn_options_black" width="24" height="24"/>
         <image name="tab_home_black" width="25" height="25"/>
     </resources>
