@@ -10,6 +10,8 @@ import UIKit
 import FirebaseAuth
 import FirebaseAuthUI
 import FirebaseDatabase
+import FirebaseFacebookAuthUI
+import FirebaseGoogleAuthUI
 
 typealias FIRUser = FirebaseAuth.User
 
@@ -29,18 +31,18 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var loginButton: UIButton!
    
     @IBAction func loginButtonTapped(_ sender: UIButton) {
-
-            // 1
-    guard let authUI = FUIAuth.defaultAuthUI()
-                else { return }
-            
-            // 2
-            authUI.delegate = self
-            
-            // 3
-            let authViewController = authUI.authViewController()
-            present(authViewController, animated: true)
-        }
+        guard let authUI = FUIAuth.defaultAuthUI()
+            else { return }
+        
+        authUI.delegate = self
+        
+        // add google provider
+        let providers: [FUIAuthProvider] = [FUIFacebookAuth(), FUIGoogleAuth()]
+        authUI.providers = providers
+        
+        let authViewController = authUI.authViewController()
+        present(authViewController, animated: true)
+    }
 }
 
 extension LoginViewController: FUIAuthDelegate {

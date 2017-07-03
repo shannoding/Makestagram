@@ -12,6 +12,7 @@ import Kingfisher
 class HomeViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     let refreshControl = UIRefreshControl()
+    let paginationHelper = MGPaginationHelper<Post>(serviceMethod: UserService.timeline)
     var posts = [Post]()
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,7 +22,7 @@ class HomeViewController: UIViewController {
     }
     
     func reloadTimeline() {
-        UserService.timeline { (posts) in
+        self.paginationHelper.reloadData(completion: { [unowned self] (posts) in
             self.posts = posts
             
             if self.refreshControl.isRefreshing {
@@ -29,7 +30,7 @@ class HomeViewController: UIViewController {
             }
             
             self.tableView.reloadData()
-        }
+        })
     }
     func configureTableView() {
         // remove separators for empty cells
@@ -92,6 +93,18 @@ extension HomeViewController: UITableViewDataSource {
     
     func numberOfSections(in tableView: UITableView) -> Int {
         return posts.count
+    }
+    
+    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+        if indexPath.section >= posts.count - 1 {
+            paginationHelper.paginate(completion: { [unowned self] (posts) in
+                self.posts.append(contentsOf: posts)
+                
+                DispatchQueue.main.async {
+                    self.tableView.reloadData()
+                }
+            })
+        }
     }
     
 }
