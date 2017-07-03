@@ -33,6 +33,9 @@
 		FB90F77E1F058354002B75EF /* FollowService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB90F77D1F058354002B75EF /* FollowService.swift */; };
 		FB90F7811F059BBD002B75EF /* FindFriends.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB90F77F1F059BBD002B75EF /* FindFriends.storyboard */; };
 		FB90F7831F059E2B002B75EF /* FindFriendsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB90F7821F059E2B002B75EF /* FindFriendsCell.swift */; };
+		FB90F7851F0A2597002B75EF /* DatabaseReference+Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB90F7841F0A2597002B75EF /* DatabaseReference+Location.swift */; };
+		FB90F7871F0A35A3002B75EF /* UITableView+Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB90F7861F0A35A3002B75EF /* UITableView+Utility.swift */; };
+		FB90F7891F0A509F002B75EF /* MGPaginationHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB90F7881F0A509F002B75EF /* MGPaginationHelper.swift */; };
 		FBF628621EFD98040010DCBC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBF628611EFD98040010DCBC /* AppDelegate.swift */; };
 		FBF628671EFD98040010DCBC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBF628651EFD98040010DCBC /* Main.storyboard */; };
 		FBF628691EFD98040010DCBC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FBF628681EFD98040010DCBC /* Assets.xcassets */; };
@@ -68,6 +71,9 @@
 		FB90F77D1F058354002B75EF /* FollowService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FollowService.swift; sourceTree = "<group>"; };
 		FB90F7801F059BBD002B75EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/FindFriends.storyboard; sourceTree = "<group>"; };
 		FB90F7821F059E2B002B75EF /* FindFriendsCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FindFriendsCell.swift; sourceTree = "<group>"; };
+		FB90F7841F0A2597002B75EF /* DatabaseReference+Location.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DatabaseReference+Location.swift"; sourceTree = "<group>"; };
+		FB90F7861F0A35A3002B75EF /* UITableView+Utility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+Utility.swift"; sourceTree = "<group>"; };
+		FB90F7881F0A509F002B75EF /* MGPaginationHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MGPaginationHelper.swift; sourceTree = "<group>"; };
 		FBF6285E1EFD98040010DCBC /* Makestagram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Makestagram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBF628611EFD98040010DCBC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FBF628661EFD98040010DCBC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -166,6 +172,8 @@
 				FB6FEC091F01B59300DA359C /* Storyboard+Utility.swift */,
 				FB6FEC3B1F02E08400DA359C /* UIImage+Size.swift */,
 				FB6FEC3D1F02E34400DA359C /* StorageReference+Post.swift */,
+				FB90F7841F0A2597002B75EF /* DatabaseReference+Location.swift */,
+				FB90F7861F0A35A3002B75EF /* UITableView+Utility.swift */,
 			);
 			name = Extensions;
 			sourceTree = "<group>";
@@ -174,6 +182,7 @@
 			isa = PBXGroup;
 			children = (
 				FB6FEC151F02410200DA359C /* MGPhotoHelper.swift */,
+				FB90F7881F0A509F002B75EF /* MGPaginationHelper.swift */,
 			);
 			name = Helpers;
 			sourceTree = "<group>";
@@ -355,18 +364,21 @@
 				FB6FEC001F00BD3800DA359C /* User.swift in Sources */,
 				FB6FEC181F02BE9300DA359C /* StorageService.swift in Sources */,
 				FB6FEBFE1F00450B00DA359C /* LoginViewController.swift in Sources */,
+				FB90F7871F0A35A3002B75EF /* UITableView+Utility.swift in Sources */,
 				FB6FEC111F01D34F00DA359C /* MainTabBarController.swift in Sources */,
 				FB6FEC051F01837500DA359C /* UserService.swift in Sources */,
 				FB6FEC481F04753C00DA359C /* PostActionCell.swift in Sources */,
 				FB90F77C1F0562A7002B75EF /* LikeService.swift in Sources */,
 				FB6FEC3A1F02DA2100DA359C /* Post.swift in Sources */,
 				FB6FEC431F0321CD00DA359C /* PostImageCell.swift in Sources */,
+				FB90F7891F0A509F002B75EF /* MGPaginationHelper.swift in Sources */,
 				FB90F7831F059E2B002B75EF /* FindFriendsCell.swift in Sources */,
 				FB6FEC3C1F02E08400DA359C /* UIImage+Size.swift in Sources */,
 				FB6FEC0D1F01C49D00DA359C /* HomeViewController.swift in Sources */,
 				FB6FEC161F02410200DA359C /* MGPhotoHelper.swift in Sources */,
 				FB6FEC0A1F01B59300DA359C /* Storyboard+Utility.swift in Sources */,
 				FB6FEC0F1F01C4AE00DA359C /* FindFriendsViewController.swift in Sources */,
+				FB90F7851F0A2597002B75EF /* DatabaseReference+Location.swift in Sources */,
 				FB6FEC3E1F02E34400DA359C /* StorageReference+Post.swift in Sources */,
 				FB6FEC081F01AB2000DA359C /* Constants.swift in Sources */,
 				FB6FEC381F02D27200DA359C /* PostService.swift in Sources */,
