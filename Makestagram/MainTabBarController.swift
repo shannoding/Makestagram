@@ -22,6 +22,7 @@ class MainTabBarController: UITabBarController {
         delegate = self
         tabBar.unselectedItemTintColor = .black
     }
+    
 }
 
 extension MainTabBarController: UITabBarControllerDelegate {

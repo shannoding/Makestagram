@@ -100,7 +100,7 @@
                     </tabBarItem>
                     <toolbarItems/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Xrp-ss-9Ws">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="Xrp-ss-9Ws">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>

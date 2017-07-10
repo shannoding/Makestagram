@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		0C5201C8FC7F3899C252F06A /* Pods_Makestagram.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61562DC9B16B5F1F383D3F04 /* Pods_Makestagram.framework */; };
+		FB2F5E111F14371200194673 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2F5E101F14371200194673 /* ProfileViewController.swift */; };
+		FB2F5E141F14410200194673 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB2F5E121F14410200194673 /* Profile.storyboard */; };
 		FB6FEBF31EFDA1B100DA359C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FB6FEBF21EFDA1B100DA359C /* GoogleService-Info.plist */; };
 		FB6FEBF61EFDD9FD00DA359C /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB6FEBF51EFDD9FD00DA359C /* Login.storyboard */; };
 		FB6FEBFE1F00450B00DA359C /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB6FEBFD1F00450B00DA359C /* LoginViewController.swift */; };
@@ -56,6 +58,8 @@
 		61562DC9B16B5F1F383D3F04 /* Pods_Makestagram.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Makestagram.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D8CD6DE65E9A86DA7CEFC53 /* Pods-Makestagram.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Makestagram.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Makestagram/Pods-Makestagram.debug.xcconfig"; sourceTree = "<group>"; };
 		EF79C6640382B59545D7499D /* Pods-Makestagram.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Makestagram.release.xcconfig"; path = "Pods/Target Support Files/Pods-Makestagram/Pods-Makestagram.release.xcconfig"; sourceTree = "<group>"; };
+		FB2F5E101F14371200194673 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		FB2F5E131F14410200194673 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Profile.storyboard; sourceTree = "<group>"; };
 		FB6FEBF21EFDA1B100DA359C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		FB6FEBF51EFDD9FD00DA359C /* Login.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		FB6FEBFD1F00450B00DA359C /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -139,6 +143,7 @@
 				FB6FEC0C1F01C49D00DA359C /* HomeViewController.swift */,
 				FB6FEC0E1F01C4AE00DA359C /* FindFriendsViewController.swift */,
 				FB6FEC101F01D34F00DA359C /* MainTabBarController.swift */,
+				FB2F5E101F14371200194673 /* ProfileViewController.swift */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -147,6 +152,7 @@
 			isa = PBXGroup;
 			children = (
 				FBF628651EFD98040010DCBC /* Main.storyboard */,
+				FB2F5E121F14410200194673 /* Profile.storyboard */,
 				FB90F77F1F059BBD002B75EF /* FindFriends.storyboard */,
 				FB6FEC3F1F02F69400DA359C /* Home.storyboard */,
 				FB6FEBF51EFDD9FD00DA359C /* Login.storyboard */,
@@ -339,6 +345,7 @@
 				FB6FEBF31EFDA1B100DA359C /* GoogleService-Info.plist in Resources */,
 				FB90F79D1F0AEE1C002B75EF /* OpenSans-Semibold.ttf in Resources */,
 				FB90F79E1F0AEE1C002B75EF /* OpenSans-SemiboldItalic.ttf in Resources */,
+				FB2F5E141F14410200194673 /* Profile.storyboard in Resources */,
 				FB90F7951F0AEE1C002B75EF /* OpenSans-Bold.ttf in Resources */,
 				FBF628691EFD98040010DCBC /* Assets.xcassets in Resources */,
 				FB90F7811F059BBD002B75EF /* FindFriends.storyboard in Resources */,
@@ -418,6 +425,7 @@
 				FB6FEC481F04753C00DA359C /* PostActionCell.swift in Sources */,
 				FB90F77C1F0562A7002B75EF /* LikeService.swift in Sources */,
 				FB6FEC3A1F02DA2100DA359C /* Post.swift in Sources */,
+				FB2F5E111F14371200194673 /* ProfileViewController.swift in Sources */,
 				FB6FEC431F0321CD00DA359C /* PostImageCell.swift in Sources */,
 				FB90F7891F0A509F002B75EF /* MGPaginationHelper.swift in Sources */,
 				FB90F7831F059E2B002B75EF /* FindFriendsCell.swift in Sources */,
@@ -439,6 +447,14 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		FB2F5E121F14410200194673 /* Profile.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FB2F5E131F14410200194673 /* Base */,
+			);
+			name = Profile.storyboard;
+			sourceTree = "<group>";
+		};
 		FB6FEC3F1F02F69400DA359C /* Home.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

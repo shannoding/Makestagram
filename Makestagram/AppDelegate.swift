@@ -22,6 +22,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         configureInitialRootViewController(for: window)
         
+        for family: String in UIFont.familyNames
+        {
+            print("\(family)")
+            for names: String in UIFont.fontNames(forFamilyName: family)
+            {
+                print("== \(names)")
+            }
+        }
+        
         return true
     }
 
@@ -57,6 +66,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         return false
     }
+    
 
 
 }
