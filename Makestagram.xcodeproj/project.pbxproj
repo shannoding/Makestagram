@@ -10,6 +10,8 @@
 		0C5201C8FC7F3899C252F06A /* Pods_Makestagram.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61562DC9B16B5F1F383D3F04 /* Pods_Makestagram.framework */; };
 		FB2F5E111F14371200194673 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2F5E101F14371200194673 /* ProfileViewController.swift */; };
 		FB2F5E141F14410200194673 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB2F5E121F14410200194673 /* Profile.storyboard */; };
+		FB2F5E161F14442600194673 /* PostThumbImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2F5E151F14442600194673 /* PostThumbImageCell.swift */; };
+		FB2F5E181F14491B00194673 /* ProfileHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2F5E171F14491B00194673 /* ProfileHeaderView.swift */; };
 		FB6FEBF31EFDA1B100DA359C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FB6FEBF21EFDA1B100DA359C /* GoogleService-Info.plist */; };
 		FB6FEBF61EFDD9FD00DA359C /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB6FEBF51EFDD9FD00DA359C /* Login.storyboard */; };
 		FB6FEBFE1F00450B00DA359C /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB6FEBFD1F00450B00DA359C /* LoginViewController.swift */; };
@@ -60,6 +62,8 @@
 		EF79C6640382B59545D7499D /* Pods-Makestagram.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Makestagram.release.xcconfig"; path = "Pods/Target Support Files/Pods-Makestagram/Pods-Makestagram.release.xcconfig"; sourceTree = "<group>"; };
 		FB2F5E101F14371200194673 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		FB2F5E131F14410200194673 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Profile.storyboard; sourceTree = "<group>"; };
+		FB2F5E151F14442600194673 /* PostThumbImageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostThumbImageCell.swift; sourceTree = "<group>"; };
+		FB2F5E171F14491B00194673 /* ProfileHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileHeaderView.swift; sourceTree = "<group>"; };
 		FB6FEBF21EFDA1B100DA359C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		FB6FEBF51EFDD9FD00DA359C /* Login.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		FB6FEBFD1F00450B00DA359C /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -220,6 +224,8 @@
 				FB6FEC451F04310200DA359C /* PostHeaderCell.swift */,
 				FB6FEC471F04753C00DA359C /* PostActionCell.swift */,
 				FB90F7821F059E2B002B75EF /* FindFriendsCell.swift */,
+				FB2F5E151F14442600194673 /* PostThumbImageCell.swift */,
+				FB2F5E171F14491B00194673 /* ProfileHeaderView.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -426,6 +432,7 @@
 				FB90F77C1F0562A7002B75EF /* LikeService.swift in Sources */,
 				FB6FEC3A1F02DA2100DA359C /* Post.swift in Sources */,
 				FB2F5E111F14371200194673 /* ProfileViewController.swift in Sources */,
+				FB2F5E181F14491B00194673 /* ProfileHeaderView.swift in Sources */,
 				FB6FEC431F0321CD00DA359C /* PostImageCell.swift in Sources */,
 				FB90F7891F0A509F002B75EF /* MGPaginationHelper.swift in Sources */,
 				FB90F7831F059E2B002B75EF /* FindFriendsCell.swift in Sources */,
@@ -438,6 +445,7 @@
 				FB6FEC3E1F02E34400DA359C /* StorageReference+Post.swift in Sources */,
 				FB6FEC081F01AB2000DA359C /* Constants.swift in Sources */,
 				FB6FEC381F02D27200DA359C /* PostService.swift in Sources */,
+				FB2F5E161F14442600194673 /* PostThumbImageCell.swift in Sources */,
 				FB6FEC031F01667900DA359C /* CreateUsernameViewController.swift in Sources */,
 				FB6FEC461F04310200DA359C /* PostHeaderCell.swift in Sources */,
 				FBF628621EFD98040010DCBC /* AppDelegate.swift in Sources */,
